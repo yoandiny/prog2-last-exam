@@ -1,7 +1,10 @@
 package mg.yoan.grades;
 
+import lombok.AllArgsConstructor;
+
 import java.time.Instant;
 
+@AllArgsConstructor
 public class Teacher {
     private int id;
     private String lastName;
