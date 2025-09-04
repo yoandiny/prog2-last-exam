@@ -4,6 +4,7 @@ package mg.yoan.grades;
 import lombok.AllArgsConstructor;
 
 import java.time.Instant;
+import java.util.List;
 
 @AllArgsConstructor
 public class Student {

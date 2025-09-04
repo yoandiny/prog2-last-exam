@@ -37,7 +37,7 @@ class CourseTest {
         assertAll(
                 "Calculation of total grades",
 
-        () -> assertEquals(10, getCourseGrade(math, john, Instant.now()));
+                () -> assertEquals(10, getCourseGrade(math, john, Instant.now()));
         );
     }
 

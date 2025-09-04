@@ -14,4 +14,5 @@ public class Exam {
     private Instant examDate;
     private int coefficient;
 
+
 }

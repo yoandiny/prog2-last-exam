@@ -21,7 +21,7 @@ public class Grade {
     }
 
 
-    double getCourseGrade(Course course, Student student, Instant t) {
+    public double getCourseGrade(Course course, Student student, Instant t) {
         return course.getGrades().stream()
                 .filter(g -> g.getStudent() == student)
                 .map(g -> g.getDate().isBefore(t))

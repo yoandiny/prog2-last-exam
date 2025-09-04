@@ -15,7 +15,7 @@ public class Course {
     private int credits;
     private Teacher teacher;
     private List<Grade> grades;
-    private List<Exam> exams;
+
 
 
 
