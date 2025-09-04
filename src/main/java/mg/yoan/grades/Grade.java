@@ -11,14 +11,20 @@ import java.time.Instant;
 public class Grade {
     private Student student;
     private Instant date;
-    private int grade;
+    private double grade;
 
 
     double getCourseGrade(Course course, Student student, Instant t) {
         return course.getGrades().stream()
                 .filter(g -> g.getStudent() == student)
-                .mapToDouble(g -> g.getGrade())
+                .map(g -> g.getDate().isBefore(t))
+                .mapToDouble(g ->getGrade())
                 .reduce(0, (subtotal, element) -> subtotal + element);
 
     }
+
+    double getExamGrade(Exam exam, Student student, Instant t) {
+
+    }
+
 }
